@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{E77A7431-680C-1974-B88B-9DAD871864A8}") = "GoudouGameJam", "Assembly-CSharp.csproj", "{6516D0B5-ED22-12EC-1757-E89FB8D5A3AF}"
+EndProject
+Project("{E77A7431-680C-1974-B88B-9DAD871864A8}") = "GoudouGameJam", "Assembly-CSharp-Editor.csproj", "{86571D15-30D1-69F7-227D-EDB4453B8E73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6516D0B5-ED22-12EC-1757-E89FB8D5A3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6516D0B5-ED22-12EC-1757-E89FB8D5A3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6516D0B5-ED22-12EC-1757-E89FB8D5A3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6516D0B5-ED22-12EC-1757-E89FB8D5A3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86571D15-30D1-69F7-227D-EDB4453B8E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86571D15-30D1-69F7-227D-EDB4453B8E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86571D15-30D1-69F7-227D-EDB4453B8E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86571D15-30D1-69F7-227D-EDB4453B8E73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
