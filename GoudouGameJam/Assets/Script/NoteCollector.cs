@@ -16,7 +16,7 @@ public class NoteCollector : MonoBehaviour {
 	
 	}
 
-	void HitNote(Note note, byte side)
+	public void HitNote(Note note, byte side)
 	{
 		if (note.Color == side)
 		{
