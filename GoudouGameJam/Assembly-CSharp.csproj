@@ -146,6 +146,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
      <Compile Include="Assets\Salmon.cs" />
+     <Compile Include="Assets\SceneManager.cs" />
      <Compile Include="Assets\Script\AudioManager.cs" />
      <Compile Include="Assets\Script\CreditScene.cs" />
      <Compile Include="Assets\Script\GameManeger.cs" />
