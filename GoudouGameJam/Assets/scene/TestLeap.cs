@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// リープモーション　テスト
 public class TestLeap : MonoBehaviour {
 
 	// 物理演算
@@ -21,24 +22,45 @@ public class TestLeap : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) 
 	{
+		bool isHand = hasHand(other.gameObject.name);
 
-		// ハンドコントローラー取得
-		GameObject obj = GameObject.Find("HandController");
-		HandController hand = obj.gameObject.GetComponent<HandController>();
-
-		if (hand)
+		if (isHand) 
 		{
-			
-			if (hand.isMoveLeft) 
+			// ハンドコントローラー取得
+			GameObject obj = GameObject.Find("HandController");
+			HandController hand = obj.gameObject.GetComponent<HandController>();
+
+			if (hand)
 			{
-				// 左に動かした場合は左に移動
-				rigi.AddForce(new Vector3(-10, 0));
+
+				if (hand.isMoveLeft) 
+				{
+					// 左に動かした場合は左に移動
+					rigi.AddForce(new Vector3(-10, 0));
+				}
+				else if (hand.isMoveRight) 
+				{
+					// 右に動かした場合は右に移動
+					rigi.AddForce(new Vector3(10, 0));
+				}
 			}
-			else if (hand.isMoveRight) 
-			{
-				// 右に動かした場合は右に移動
-				rigi.AddForce(new Vector3(10, 0));
-			}
+		}
+
+	}
+
+	// リープモーションの手を持っているか
+	bool hasHand(string name)
+	{
+		switch (name) 
+		{
+		case "bone1":
+		case "bone2":
+		case "bone3":
+		case "palm":
+			return true;
+		default:
+			return false;
+
 		}
 	}
 }
