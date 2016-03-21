@@ -147,6 +147,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
      <Compile Include="Assets\Salmon.cs" />
      <Compile Include="Assets\Script\AudioManager.cs" />
+     <Compile Include="Assets\Script\CreditScene.cs" />
      <Compile Include="Assets\Script\GameManeger.cs" />
      <Compile Include="Assets\Script\Note.cs" />
      <Compile Include="Assets\Script\NoteCollector.cs" />
@@ -155,6 +156,7 @@
      <Compile Include="Assets\Script\SingletonMonoBehaviour.cs" />
      <Compile Include="Assets\Script\SingletonMonoBehaviourTNewBehaviourScript.cs" />
      <Compile Include="Assets\Script\Sound.cs" />
+     <Compile Include="Assets\Script\TitleScene.cs" />
      <Compile Include="Assets\scene\TestLeap.cs" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />
