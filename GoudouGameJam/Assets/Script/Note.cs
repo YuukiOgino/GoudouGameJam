@@ -18,12 +18,13 @@ public class Note : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GetComponent<Rigidbody>().AddForce(dir, ForceMode.VelocityChange);
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += dir;
+		//transform.position += dir;
 		// hit to borderline
 		if(transform.position.z < border)
 		{
@@ -32,22 +33,30 @@ public class Note : MonoBehaviour {
 	
 	}
 
+	void FixUpdate()
+	{
+
+	}
+
 	void OnTriggerEnter(Collider col)
 	{
 		// hit to hand (leapmotion)
+		print(col.gameObject.tag);
 		if(col.gameObject.tag == "leap_hand")
 		{
-			HandController hand = col.GetComponent<HandController>();
+			HandController hand = col.transform.root.gameObject.GetComponent<HandController>();
 			// left:white right:black
 			if (hand.isMoveLeft)
 			{
 				collector.HitNote(this, 0);
 				dir += forceLeft;
+				GetComponent<Rigidbody>().AddForce(dir, ForceMode.VelocityChange);
 			}
 			else if (hand.isMoveRight)
 			{
 				collector.HitNote(this, 1);
 				dir += forceRight;
+				GetComponent<Rigidbody>().AddForce(dir, ForceMode.VelocityChange);
 			}
 		}
 	}
